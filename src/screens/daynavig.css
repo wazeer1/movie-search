@@ -1,0 +1,54 @@
+.daynav{
+    padding-top: 50px;
+}
+.daynav .wrapper ul{
+    display:flex;
+    width: 60%;
+   
+    justify-content:space-between;
+    border-bottom: 1px solid gray
+    ;
+}
+.daynav .wrapper ul li Link{
+    font-size: 30px;
+    color:#000;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+}
+.daynav .wrapper ul li:after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:3px;
+    background:linear-gradient(to right,  rgba(255, 255, 0, 0.316) , orange);
+    /* background:#000; */
+    left:0;
+    bottom:0;
+
+}
+.daynav .wrapper ul li:hover:after{
+    width: 100%;
+}
+.link-text{
+    font-size: 30px;
+    color:#000;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+    text-decoration:none;
+}
+.link-text:after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:3px;
+    background:linear-gradient(to right,  rgba(255, 255, 0, 0.796) , orange);
+    /* background:#000; */
+    left:0;
+    bottom:0;
+}
+.link-text:hover:after{
+    width: 100%;
+    transition:.4s ease;
+}

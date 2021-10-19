@@ -1,0 +1,37 @@
+.header{
+    padding-top: 30px;
+}
+.header .wrapper{
+    display:flex;
+    justify-content:space-between;
+}
+.header .wrapper .right ul{
+    display:flex;
+    /* padding-bottom: 10px; */
+    border-bottom: 1px solid gray;
+}
+.header .wrapper .right ul li{
+    padding-right: 24px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.header .wrapper .right ul li:first-child:after{
+    width: 100%;
+    transition: .4s ease;
+}
+.header .wrapper .right ul li:after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:3px;
+    background:linear-gradient(to right,  rgba(255, 255, 0, 0.316) , orange);
+    /* background:#000; */
+    left:0;
+    bottom:0;
+}
+.header .wrapper .right ul li:hover:after{
+    width: 100%;
+    transition: .4s ease;
+}

@@ -1,0 +1,16 @@
+.widjets{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.widjets img{
+
+}
+.widjets span{
+    color:#000;
+    font-weight: 700;
+}
+.widjets h4{
+    color:#000;
+ 
+}

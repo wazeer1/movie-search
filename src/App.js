@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './screens/Header';
+import New from './screens/New'
+import Spotlight from './screens/Spotlight';
+import Daynavig from './screens/Daynavig';
+import Search from './screens/Search'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Spotlight />
+      <New />
+      <Daynavig />
+      <Search />
     </div>
   );
 }
